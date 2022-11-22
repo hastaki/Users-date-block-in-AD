@@ -1,5 +1,5 @@
-﻿$token = "185216020327:AAF5sPvtRFVfc-Ndqf2JhBE1NAQae5XQ_nGGz_fqc"
-$Chat_Id = '-75121123142340568'
+﻿$token = "******************"
+$Chat_Id = '********'
 $warnDays = (get-date)
 $2Day = (get-date).adddays(-1)
 $12=Get-ADUser -Filter * -Properties samaccountname,AccountExpirationDate | where AccountExpirationDate -lt $warnDays |where AccountExpirationDate -gt $2Day  |select samaccountname,AccountExpirationDate
